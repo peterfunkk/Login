@@ -1,0 +1,33 @@
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    border-radius: 5%;
+    padding: 10px;
+    border: #005bb5 solid;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 300px;
+  }
+  
+  .button {
+    padding: 10px;
+    width: 320px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #005bb5;
+  }
