@@ -8,7 +8,7 @@ export default function Login() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    axios.post('http://localhost:4000/login', { user, password }, { withCredentials: true })
+    axios.post('http://localhost:4001/login', { user, password }, { withCredentials: true })
             .then(response => {
                 console.log(response.data);
             })
