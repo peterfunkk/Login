@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
+    "baseUrl": ".", // Asegúrate de incluir "baseUrl"
     "paths": {
-      "@/*": ["./src/*"]
-    }
+      "@/*": ["./src/*"] // Definición del alias
+    },
+    // Otras configuraciones que puedas tener
   }
 }

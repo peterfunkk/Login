@@ -17,17 +17,17 @@ export default function Register() {
         email,
         password,
       });
-      alert(res.data.message || 'Usuario registrado con éxito');
+      alert(res.data.mensaje || 'Usuario registrado con éxito');
       setIsRegistered(true);
       setTimeout(() => setIsRegistered(false), 3000);
     } catch (error) {
-      alert(error.response?.data?.error || 'Error al registrar el usuario');
+      alert(error.response?.data?.error)
     }
   };
 
   return (
     <div className={styles.formContainer}>
-      <h1>Login</h1>
+      <h1>Register</h1>
       <form onSubmit={handleSubmit} className={styles.form}>
         <input
           type="text"
@@ -56,6 +56,7 @@ export default function Register() {
         <button type="submit" className={styles.button}>Registrarse</button>
       </form>
       {isRegistered && <Card duration={3000}/>}
+      <a href="/login">¿Ya tenes cuenta?</a>
     </div>
   );
 }
