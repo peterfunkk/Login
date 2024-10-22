@@ -12,7 +12,7 @@ export default function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:4001/register', {
+      const res = await axios.post('https://loginexpressweb-git-main-peterfunkks-projects.vercel.app/?vercelToolbarCode=Imp0TnUVX5l2dSJ/register', {
         user,
         email,
         password,

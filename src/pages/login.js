@@ -11,7 +11,7 @@ export default function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:4001/login', { user, password }, { withCredentials: true });
+      const response = await axios.post('https://loginexpress-alpha.vercel.app/login', { user, password }, { withCredentials: true });
       console.log(response.data);
       navigate('/dashboard'); // Redirige después de iniciar sesión correctamente
     } catch (error) {
